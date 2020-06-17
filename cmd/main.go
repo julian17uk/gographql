@@ -49,7 +49,28 @@ func main() {
 				writedata(filename, text)
 				return "ok", nil
 			},
-		},	}
+		},	
+		"addToFile": &graphql.Field{
+			Type: graphql.String,
+			Args: graphql.FieldConfigArgument{
+				"filename": &graphql.ArgumentConfig{
+					Type: graphql.NewNonNull(graphql.String),
+				},
+				"text": &graphql.ArgumentConfig{
+					Type: graphql.String,
+				},
+			},
+			Resolve: func(params graphql.ResolveParams) (interface{} , error) {
+				filename, _ := params.Args["filename"].(string)
+				text, _ := params.Args["text"].(string)
+
+				// save text to filename here
+				adddata(filename, text)
+				return "ok", nil
+			},
+		},	
+	
+	}
 
 	rootQuery := graphql.ObjectConfig{Name: "RootQuery", Fields: queryfields}
 	rootMutation := graphql.NewObject(graphql.ObjectConfig{
@@ -132,6 +153,15 @@ func writedata(filename string, text string) {
 
 	bytedata := []byte(text)
 	_, err = f.Write(bytedata)
+	check(err)
+}
+
+func adddata(filename string, text string) {
+	f, err := os.OpenFile(filename, os.O_APPEND|os.O_WRONLY, 0644)
+	check(err)
+	defer f.Close()
+	fmt.Println("file named", filename, "opened")
+	f.WriteString("\n"+text)
 	check(err)
 }
 
