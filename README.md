@@ -1,11 +1,11 @@
 # README #
 
-Graphql is a GraphQL server written in go (golang). 
+Graphql is a GraphQL server written in go (golang). GraphQL is a query language for APIs. Please refer to https://graphql.org/ for further details.
 
 
 ### What is this repository for? ###
 
-* This project has been written by Julian Karnik at ECS Digital. When the graphql server is running it allows users to access and mutate the data using any application designed to interact with a graphql server. For example the application GraphiQL can be used to test the project.
+* This project has been written by Julian Karnik at ECS Digital. When the GraphQL server is running it allows users to access and mutate the data using any application designed to interact with a GraphQL server. For example the application GraphiQL can be used to test the project.
 * Version 1.0
 
 ### How do I get set up? ###
@@ -21,7 +21,7 @@ Graphql is a GraphQL server written in go (golang).
 ### How to run graphql server in the terminal? ###
 
 * Run, from cmd folder user$ go run main.go
-* Using GraphiQL (or others) make a call to the server, for example. To install GraphiQL see 
+* Using GraphiQL (or others) make a call to the server, for example. To install GraphiQL see https://www.electronjs.org/apps/graphiql
 
 
 ### Contribution guidelines ###
