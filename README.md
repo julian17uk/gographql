@@ -1,16 +1,17 @@
 # README #
 
-Graphql is a GraphQL server written in go (golang). GraphQL is a query language for APIs. Please refer to https://graphql.org/ for further details.
+This project is a GraphQL server written in go (Golang). GraphQL is a query language for APIs, this represents a significant improvement over REST APIs. Please refer to https://graphql.org/ for further details.
 
 
 ### What is this repository for? ###
 
-* This project has been written by Julian Karnik at ECS Digital. When the GraphQL server is running it allows users to access and mutate the data using any application designed to interact with a GraphQL server. For example the application GraphiQL can be used to test the project.
+* This project has been written by Julian Karnik at ECS Digital. When the GraphQL server is running it allows users to access and mutate the data using any application designed to interact with a GraphQL API. For example the application GraphiQL can be used to test the API.
 * Version 1.0
 
 ### How do I get set up? ###
 
-* First, please ensure that golang is available. See https://golang.org/doc/install
+* To set up first install golang on your device. See https://golang.org/doc/install
+* To install GraphiQL see https://www.electronjs.org/apps/graphiql (not required)
 * Configuration: none required
 * Dependencies
 * cmd folder hold the main.go file
@@ -20,8 +21,11 @@ Graphql is a GraphQL server written in go (golang). GraphQL is a query language 
 
 ### How to run graphql server in the terminal? ###
 
-* Run, from cmd folder user$ go run main.go
-* Using GraphiQL (or others) make a call to the server, for example. To install GraphiQL see https://www.electronjs.org/apps/graphiql
+* To launch the API, from cmd folder run user$ go run main.go
+* To test the API, run GraphiQL (or others) to make a call to the API.
+* When the service is running the API Endpoint is http:xxxxxxxx
+* Example GraphQL API calls are available in the examples folder.
+* There are two basic types of API calls get (same as GET in REST) and mutation (this covers POST, PUT & DELETE in REST)
 
 
 ### Contribution guidelines ###
@@ -32,4 +36,4 @@ Graphql is a GraphQL server written in go (golang). GraphQL is a query language 
 
 ### Who do I talk to? ###
 
-* For further information please contact Julian Karnik at julian.karnik@ecs-digital.co.uk
+* For comments contact julian.karnik@ecs-digital.co.uk
