@@ -96,6 +96,13 @@ func main() {
 //	 hello
 //	 test
 // }
+// To test graphql mutation
+// mutation {
+// 	createNewFile(
+// 	  filename: "australia",
+// 	  text: "hello from australia",
+// 	)
+//   }
 
 // or using a browser with the following http request
 // http://localhost:8080/graphql?query={hello}
