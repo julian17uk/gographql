@@ -1,6 +1,9 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Graphql is a GraphQL server written in go (golang). This project has been written by Julian Karnik at ECS Digital.
+When the graphql server is running it allows users to access and mutate the data using any application designed to interact with a graphql server.
+For example the application GraphiQL can be used to test the project.
+
 
 ### What is this repository for? ###
 
@@ -10,10 +13,10 @@ This README would normally document whatever steps are necessary to get your app
 
 ### How do I get set up? ###
 
-* Summary of set up
+* For set up, firstly please ensure that golang is available. See here for setup
 * Configuration
 * Dependencies
-* Database configuration
+* There is no database linked to this project
 * How to run tests
 * Deployment instructions
 
@@ -25,5 +28,4 @@ This README would normally document whatever steps are necessary to get your app
 
 ### Who do I talk to? ###
 
-* Repo owner or admin
-* Other community or team contact
+* For further information please contact Julian Karnik at julian.karnik@ecs-digital.co.uk
