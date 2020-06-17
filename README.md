@@ -13,7 +13,7 @@ This project is a GraphQL server written in go (Golang). GraphQL is a query lang
 * To set up first install golang on your device. See https://golang.org/doc/install
 * To install GraphiQL see https://www.electronjs.org/apps/graphiql (not required)
 * Configuration: none required
-* Dependencies
+* Dependencies: This project uses the graphql go library. See https://github.com/graphql-go/graphql (to install run go get github.com/graphql-go/graphql) 
 * cmd folder hold the main.go file
 * internal folder holds the internal functions
 * How to run tests: user$ go test -v (from within the test folder)
