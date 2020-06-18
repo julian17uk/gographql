@@ -1,6 +1,6 @@
 # README #
 
-This project is a GraphQL server written in go (Golang). GraphQL is a query language for APIs, this represents a significant improvement over REST APIs. Please refer to https://graphql.org/ for further details.
+This project is a GraphQL server written in go (Golang). GraphQL is a query language for APIs, this represents an improvement over REST APIs. Please refer to https://graphql.org/ for further details.
 
 
 ### What is this repository for? ###
