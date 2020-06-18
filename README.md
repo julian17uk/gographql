@@ -27,7 +27,7 @@ This project is a GraphQL server written in go (Golang). GraphQL is a query lang
 * Alternatively the API can be tested directly using a browser (see examples.go in examples folder for details)
 * When the service is running the API Endpoint is http://localhost:8080/graphql? and http://[ipv6]:8080/graphql?
 * Example GraphQL API calls are available in the examples folder.
-* There are two basic types of API calls get (same as GET in REST) and mutation (this covers POST, PUT & DELETE in REST)
+* There are two basic types of API calls query (the same as GET in REST) and mutation (this covers POST, PUT & DELETE in REST)
 
 ### Warning ###
 
