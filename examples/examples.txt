@@ -17,7 +17,7 @@ mutation {
 mutation {
 	addToFile(
 	  filename: "australia",
-	  text: "major city is Melbourne",
+	  text: "a major city is Melbourne",
 	)
 }
 
