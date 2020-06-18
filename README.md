@@ -17,9 +17,8 @@ This project is a GraphQL server written in go (Golang). GraphQL is a query lang
 * Dependencies: This project uses the graphql go library. See https://github.com/graphql-go/graphql (to install run go get github.com/graphql-go/graphql) 
 * cmd folder hold the main.go file
 * internal folder holds the internal functions
-* data folder holds all the data that goes into and out of the graphql API
-* How to run tests: user$ go test -v (from within the test folder)
 * The data is stored in the data folder
+* How to run tests: user$ go test -v (from within the test folder)
 
 ### How to run graphql server in the terminal? ###
 
