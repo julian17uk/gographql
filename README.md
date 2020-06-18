@@ -27,6 +27,11 @@ This project is a GraphQL server written in go (Golang). GraphQL is a query lang
 * Example GraphQL API calls are available in the examples folder.
 * There are two basic types of API calls get (same as GET in REST) and mutation (this covers POST, PUT & DELETE in REST)
 
+### Warning ###
+
+* When this service is running, it will accept http connections on port 8080 from anywhere on the internet
+* This service allows any other computer to get & mutate files stored on this computer, therefore please use cautiously
+
 
 ### Contribution guidelines ###
 
