@@ -36,7 +36,6 @@ func Adddata(filename string, text string) {
 	f, err := os.OpenFile(filename, os.O_APPEND|os.O_WRONLY, 0644)
 	Check(err)
 	defer f.Close()
-	fmt.Println("file named", filename, "opened")
 	f.WriteString("\n"+text)
 	Check(err)
 }

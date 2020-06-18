@@ -82,23 +82,6 @@ func main() {
 	if err != nil {
 		log.Fatalf("failed to create new schema, error: %v", err)
 	}
-	// Query Test
-	testquery := `
-		{
-			readFile(
-				filename: "hello"
-			)
-		}		
-	`
-
-	params := graphql.Params{Schema: schema, RequestString: testquery}
-	result := graphql.Do(params)
-	if len(result.Errors) > 0 {
-		log.Fatalf("failed to execute graphql operations, errors: %+v", result.Errors)
-	}
-	resultJSON, _ := json.Marshal(result)
-	fmt.Printf("%s \n", resultJSON) 
-	fmt.Printf("test run successfully \n")
 
 	// set up the graphql server on http port 8080
 	http.HandleFunc("/graphql", func(write http.ResponseWriter, request *http.Request) {
@@ -109,3 +92,6 @@ func main() {
 	fmt.Println("Now GraphQL Server is running on port 8080")
 	http.ListenAndServe(":8080", nil)
 }
+
+
+func DefineQueryFields 
