@@ -26,5 +26,15 @@ query
 http://localhost:8080/graphql?query={readFile(filename:"Japan")}
 
 mutation
-http://[ipv6address]:8080/graphql?query=mutation{createNewFile(filename:"France", text:"The capital is Paris")}
+http://localhost:8080/graphql?query=mutation{createNewFile(filename:"France", text:"The capital is Paris")}
 http://http://localhost:8080/graphql?query=mutation{addToFile(filename:%22France%22,text:%22A%20major%20city%20is%20Bordeaux%22)}
+
+These commands are also available from other machines pointing to the ipv4 or ipv6 address of the server, for example:
+query
+http://[ipv6address]:8080/graphql?query={readFile(filename:"Mexico")}
+
+mutation
+http://[ipv6address]:8080/graphql?query=mutation{createNewFile(filename:"Spain", text:"The capital is Madrid")}
+http://[ipv6address]:8080/graphql?query=mutation{addToFile(filename:%22Spain%22,text:%22A%20major%20city%20is%20Barcelona%22)}
+
+
