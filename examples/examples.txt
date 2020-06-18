@@ -3,7 +3,7 @@ Run GraphiQL and visit endpoint http://localhost:8080/graphql?
 with the following graphql query
 query  {
 	readFile(
-		filename: "hello"
+		filename: "Canada"
 	)
 }
 To test graphql mutation
@@ -23,7 +23,7 @@ mutation {
 
 Or using a browser with the following http request
 query
-http://localhost:8080/graphql?query={readFile(filename:"hello")}
+http://localhost:8080/graphql?query={readFile(filename:"Japan")}
 
 mutation
 http://[ipv6address]:8080/graphql?query=mutation{createNewFile(filename:"France", text:"The capital is Paris")}
