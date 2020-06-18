@@ -6,7 +6,7 @@ This project is a GraphQL server written in go (Golang). GraphQL is a query lang
 ### What is this repository for? ###
 
 * This project has been written by Julian Karnik at ECS Digital. When the GraphQL server is running it allows users to access and mutate the data using any application designed to interact with a GraphQL API. For example the application GraphiQL can be used to test the API.
-* The project was designed to store the data in a flat file structure (rather than a database). Here we use the unix file system to store data as flat files.
+* The project was designed to store the data in a flat file structure (rather than a database). Here we use the unix file system to store data as flat files. The JSON format is used to transmit data to and from the GraphQL API.
 * Version 1.0
 
 ### How do I get set up? ###
