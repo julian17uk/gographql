@@ -26,5 +26,5 @@ query
 http://localhost:8080/graphql?query={readFile(filename:"hello")}
 
 mutation
-http://[ipv6address]:8080/graphql?query=mutation{createNewFile(filename:"france", text:"major city is Sao Paulo")}
+http://[ipv6address]:8080/graphql?query=mutation{createNewFile(filename:"france", text:"A major city is Bordeaux")}
 http://http://localhost:8080/graphql?query=mutation{addToFile(filename:%22france%22,text:%22a%20major%20city%20is%20bordeaux%22)}
