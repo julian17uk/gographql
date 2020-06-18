@@ -92,6 +92,3 @@ func main() {
 	fmt.Println("Now GraphQL Server is running on port 8080")
 	http.ListenAndServe(":8080", nil)
 }
-
-
-func DefineQueryFields 
