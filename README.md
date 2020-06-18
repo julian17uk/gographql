@@ -6,6 +6,7 @@ This project is a GraphQL server written in go (Golang). GraphQL is a query lang
 ### What is this repository for? ###
 
 * This project has been written by Julian Karnik at ECS Digital. When the GraphQL server is running it allows users to access and mutate the data using any application designed to interact with a GraphQL API. For example the application GraphiQL can be used to test the API.
+* The project was designed to store the data in a flat file structure (rather than a database). Here we use the unix file system to store data as flat files.
 * Version 1.0
 
 ### How do I get set up? ###
@@ -16,6 +17,7 @@ This project is a GraphQL server written in go (Golang). GraphQL is a query lang
 * Dependencies: This project uses the graphql go library. See https://github.com/graphql-go/graphql (to install run go get github.com/graphql-go/graphql) 
 * cmd folder hold the main.go file
 * internal folder holds the internal functions
+* data folder holds all the data that goes into and out of the graphql API
 * How to run tests: user$ go test -v (from within the test folder)
 * The data is stored in the data folder
 
